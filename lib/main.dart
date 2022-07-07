@@ -29,13 +29,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  //int _counter = 0;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+//  void _incrementCounter() {
+//    setState(() {
+  //_counter++;
+//    });
+//  }
 
   @override
   Widget build(BuildContext context) {
@@ -43,14 +43,14 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Row(
-          children: [
-            Text('검색 결과 새로운 모멘텀으로 활기찬 하루를 준비하...'),
-            Icon(Icons.play_circle),
-            Icon(Icons.search_outlined),
-            Icon(Icons.playlist_add_check_outlined),
-          ],
-        ),
+        title: Text('YouTube'),
+        leading: Image.asset('assets/icon.png'),
+        actions: <Widget>[
+          Text('검색 결과 새로운 모멘텀으로 활기찬 하루를 준비하...'),
+          Icon(Icons.ondemand_video),
+          Icon(Icons.search_outlined),
+          Icon(Icons.menu),
+        ],
       ),
       body: Column(
         //mainAxisAlignment: MainAxisAlignment.center,
@@ -71,8 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.white,
                         letterSpacing: 2.0,
                         fontSize: 18.0,
-                        fontWeight: FontWeight.bold
-                    ),
+                        fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   ),
                   Text(
@@ -81,15 +80,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.white,
                         letterSpacing: 2.0,
                         fontSize: 12.0,
-                        fontWeight: FontWeight.bold
-                    ),
+                        fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   ),
                   Text(
                     "조회수 440만회 * 8개월 전 ",
                     style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 9.0,
+                      color: Colors.white,
+                      fontSize: 9.0,
                     ),
                     textAlign: TextAlign.left,
                   ),
@@ -113,8 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.white,
                         letterSpacing: 2.0,
                         fontSize: 18.0,
-                        fontWeight: FontWeight.bold
-                    ),
+                        fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   ),
                   Text(
@@ -123,8 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.white,
                         letterSpacing: 2.0,
                         fontSize: 12.0,
-                        fontWeight: FontWeight.bold
-                    ),
+                        fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   ),
                   Text(
@@ -155,8 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.white,
                         letterSpacing: 2.0,
                         fontSize: 18.0,
-                        fontWeight: FontWeight.bold
-                    ),
+                        fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   ),
                   Text(
@@ -165,8 +160,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.white,
                         letterSpacing: 2.0,
                         fontSize: 12.0,
-                        fontWeight: FontWeight.bold
-                    ),
+                        fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   ),
                   Text(
