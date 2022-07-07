@@ -43,13 +43,25 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('YouTube'),
+        title: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text('YouTube'),
+        ),
+        titleSpacing: 0,
         leading: Image.asset('assets/icon.png'),
         actions: <Widget>[
-          Text('검색 결과 새로운 모멘텀으로 활기찬 하루를 준비하...'),
-          Icon(Icons.ondemand_video),
-          Icon(Icons.search_outlined),
-          Icon(Icons.menu),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,0,12,0),
+            child: Icon(Icons.ondemand_video),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,0,12,0),
+            child: Icon(Icons.search_outlined),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,0,24,0),
+            child: Icon(Icons.menu),
+          ),
         ],
       ),
       body: Column(
